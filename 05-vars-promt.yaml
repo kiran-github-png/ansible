@@ -3,7 +3,7 @@
   connection: local
   vars_prompt:
   - name: username
-    promt: What is your username?
+    prompt: What is your username?
     private: false
   - name: username
     prompt: What is your username?
