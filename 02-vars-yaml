@@ -1,11 +1,11 @@
 - name: play level variables
   hosts: local
-  connections: local #Ansible is connecting to local host
+  connection: local # Ansible is connecting to localhost
   vars:
     COURSE: Ansible
-    DURATION: 10 HRS
-    TRAINER: kirankumar k
+    DURATION: 10HRS
+    Trainer: Sivakumar reddy
   tasks:
-    - name: print the course info
-      ansible.builtin.degug:
-        msg: "Curse Name is: {{ COURSE }}, Duration: {{ DURATION }}, Trainer: {{ TRAINER }}"
+  - name: print the course info
+    ansible.builtin.debug:
+      msg: "Course Name is: {{ COURSE }}, Duratioin: {{ DURATION }}, Trainer: {{ Trainer }}"
