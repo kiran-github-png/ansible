@@ -6,7 +6,7 @@
     prompt: What is your username?
     private: false
   - name: username
-    prompt: What is your username?
+    prompt: What is your password?
     private: false
   tasks:
   - name: print credentials
