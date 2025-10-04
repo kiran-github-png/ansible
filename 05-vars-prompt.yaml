@@ -2,9 +2,9 @@
   hosts: local
   connection: local
   vars_prompt:
-- name: username
-  prompt: What is your Username?
-  private: false
+  - name: username
+    prompt: What is your Username?
+    private: false
 
   tasks:
   - name: print credentials
