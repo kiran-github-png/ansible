@@ -5,6 +5,9 @@
   connection: local
   vars:
     technologies: DevSecOps, Linux, Shell Scripting, Ansible
+    tags:
+      Application: payment
+      Environment: DevOps
 
   tasks:
   - name: default variables
@@ -16,3 +19,7 @@
   - name: convert string to List
     ansible.builtin.debug:
       msg: "Technolgies are: {{ technologies | split(',') }}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "Tags are: {{ tags | dict2items }}"
