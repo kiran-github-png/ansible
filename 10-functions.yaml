@@ -3,6 +3,10 @@
   connection: local
   vars:
     technologies: DevOps, Linux, Shell Scripting, Ansible
+    # dictionary == map
+    tags:
+      Application: payment
+      Environment: dev
   tasks:
   - name: default variables
     ansible.builtin.debug:
@@ -13,3 +17,7 @@
   - name: Convert String to List 
     ansible.builtin.debug:
       msg: "Technologies are: {{ technologies | split(',') }}"
+
+  - name: Converting Mao to List
+    ansible.builtin.debug:
+      msg: "Tags are: {{ tags | dict2items }} "
