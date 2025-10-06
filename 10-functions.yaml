@@ -4,6 +4,7 @@
   vars:
     technologies: DevOps, Linux, Shell Scripting, Ansible
     name: Kirankumar K
+    gmail: KOSURIKIRAN@7GMAIL.COM
     # dictionary == map
     tags:
       Application: payment
@@ -35,5 +36,9 @@
   - name:  convert lowercase
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: convert lower case
+    ansible.builtin.debug:
+      msg: "{{ gmail | lower }}"
 
   
