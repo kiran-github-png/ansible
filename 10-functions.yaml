@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: DevOps, Linux, Shell Scripting, Ansible
+    name: Kirankumar K
     # dictionary == map
     tags:
       Application: payment
@@ -30,5 +31,9 @@
   - name: Converting Map to List
     ansible.builtin.debug:
       msg: "Tags Map: {{  listTages | items2dict }}"
+
+  - name:  convert lowercase
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
 
   
