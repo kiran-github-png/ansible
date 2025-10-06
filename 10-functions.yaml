@@ -6,6 +6,7 @@
   vars:
     technologies: DevSecOps, Linux, Shell Scripting, Ansible
     name: Kirankumar k
+    names: KIRAN KUMAR KOSURI
     tags:
       Application: payment
       Environment: DevOps
@@ -37,4 +38,8 @@
   - name: convert uppercase 
     ansible.builtin.debug:
       msg: "{{ name | upper }}"
+
+  - name: convert lowercase 
+    ansible.builtin.debug:
+      msg: "{{ names | lower }}"
 
