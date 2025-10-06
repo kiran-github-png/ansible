@@ -11,5 +11,5 @@
 # String to List
 
   - name: Convert String to List 
-    ansible.builtin.degub:
+    ansible.builtin.debug:
       msg: "Technologies are: {{ technolgies | spilt (',') }}"
