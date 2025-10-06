@@ -7,6 +7,7 @@
     technologies: DevSecOps, Linux, Shell Scripting, Ansible
     name: Kirankumar k
     names: KIRAN KUMAR KOSURI
+    gmail: Kiran@GMAIL.COM
     tags:
       Application: payment
       Environment: DevOps
@@ -42,4 +43,8 @@
   - name: convert lowercase 
     ansible.builtin.debug:
       msg: "{{ names | lower }}"
+
+  - name: convert to lower case
+    ansible.builtin.debug:
+      msg: "{{ gmail | lower }}"
 
