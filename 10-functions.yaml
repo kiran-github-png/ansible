@@ -30,3 +30,8 @@
   - name: Converting Map to List
     ansible.builtin.debug:
       msg: "Tags Map: {{  listTages | items2dict }}"
+
+  - name: Read yaml and take it into a vatiables
+    ansible.builtin.set_fact:
+    student_yaml:
+      msg: "yaml: {{ lookup('file','student.yaml') | from_yaml }}"
