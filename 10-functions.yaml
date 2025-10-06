@@ -34,4 +34,4 @@
   - name: Read yaml and take it into a vatiables
     ansible.builtin.set_fact:
     student_yaml:
-      msg: "yaml: {{ lookup('file','student.yaml') | from_yaml }}"
+      msg: "yaml: {{ lookup('file','student_yaml') | from_yaml }}"
