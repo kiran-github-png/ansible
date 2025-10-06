@@ -5,7 +5,7 @@
     technologies: DevOps, Linux, Shell Scripting, Ansible
     name: Kirankumar K
     gmail: KOSURIKIRAN@7GMAIL.COM
-    ipaddress: 123.2345.23456.234
+    ipaddress: 192.168.0.1
     # dictionary == map
     tags:
       Application: payment
