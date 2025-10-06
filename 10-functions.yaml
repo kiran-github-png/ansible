@@ -5,6 +5,7 @@
   connection: local
   vars:
     technologies: DevSecOps, Linux, Shell Scripting, Ansible
+    name: Kirankumar k
     tags:
       Application: payment
       Environment: DevOps
@@ -32,3 +33,8 @@
   - name: convert list into map
     ansible.builtin.debug:
       msg: "Tag map: {{ listTags | items2dict }}"
+
+  - name: convert uppercase 
+    ansible.builtin.debug:
+      msg: "{{ name | upper }}"
+
