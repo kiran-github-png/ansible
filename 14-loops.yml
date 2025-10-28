@@ -1,4 +1,4 @@
-- name: Install pacakges
+- name: Install packages
   hosts: local
   connection: local
   become: yes
