@@ -1,0 +1,7 @@
+- name: Play Level Variables
+  hosts: local
+  connection: local
+  tasks:
+    - name: print course info
+      ansible.builtin.debug:
+        msg: "Couse Name is: {{ Course }}, Duration {{ Duration }}, Trainer {{ TRAINER }}"
