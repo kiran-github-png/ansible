@@ -1,13 +1,13 @@
 - name: Install Packages
   hosts: local
   connection: local
-  because: yes
+  become: yes
   tasks:
   - name: Print names
     ansible.builtin.package:
       name: "{{ item }}"
       state: latest
-  loop:
-  - python3
-  - nginx
-  - mysql
+    loop:
+    - python3
+    - nginx
+    - mysql
