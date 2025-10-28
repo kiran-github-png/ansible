@@ -9,3 +9,4 @@
     - name: print course info
       ansible.builtin.debug:
         msg: "Couse Name is: {{ Course }}, Duration {{ Duration }}, Trainer {{ Trainer }}"
+
