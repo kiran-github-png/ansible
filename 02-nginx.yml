@@ -27,3 +27,4 @@
     ansible.builtin.service:
       name: nginx
       start: started
+      enabled: yes
