@@ -4,4 +4,4 @@
   tasks:
     - name: print course info
       ansible.builtin.debug:
-        msg: "Couse Name is: {{ COURSE }}, Duration {{ Duration }}, Trainer {{ TRAINER }}"
+        msg: "Couse Name is: {{ COURSE }}, Duration {{ DURATION }}, Trainer {{ TRAINER }}"
