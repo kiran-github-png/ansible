@@ -16,7 +16,7 @@
 
 - name: install nginx
   hosts: frontend
-  because: yes
+  become: yes
   tasks:
   - name: install
     ansible.builtin.package:
