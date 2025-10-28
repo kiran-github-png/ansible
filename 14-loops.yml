@@ -6,8 +6,7 @@
   - name: Print names
     ansible.builtin.package:
       name: "{{ item.name }}"
-      name: "{{ item.state }}"
-      state: latest
+      state: "{{ item.state }}"
     loop:
     - { name: "python3", state:"absent" }
     - { name: "nginx", state:"absent" }
