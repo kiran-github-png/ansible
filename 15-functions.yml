@@ -1,7 +1,13 @@
 - name: functions
   hosts: local
   connection: local
+  vars:
+    technologies: Linux,Shell,Ansible,Terraform
   tasks: 
   - name: default variables 
     ansible.builtin.debug:
       msg: "Hello, {{ name }}"
+
+  - name: convert string to list
+    ansible.builtin.debug:
+      msg: "Technologies are: {{ technologies | split (',') }}"
