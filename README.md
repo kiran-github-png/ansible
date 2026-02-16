@@ -5,11 +5,19 @@ This repository contains a simple Ansible playbook that demonstrates basic filte
 # What This Playbook Covers
 
 Default variables
+
 String to list conversion
+
 Dictionary ↔ List conversion
+
 YAML to JSON conversion
+
 Writing JSON to file
+
 Uppercase / Lowercase filters
+
 IP address validation
+
 Shell vs Command module
+
 Output redirection
